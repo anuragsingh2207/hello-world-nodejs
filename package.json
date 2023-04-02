@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "No tests found"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/anuragsingh2207/hello-node/issues"
   },
-  "homepage": "https://github.com/anuragsingh2207/hello-node/#readme"
+  "homepage": "https://github.com/anuragsingh2207/hello-node/#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
 }
