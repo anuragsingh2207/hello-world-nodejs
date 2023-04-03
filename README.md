@@ -1,16 +1,22 @@
-# Node Hello World
+#  Hello World Node
 
-This repo contains simple node.js app that servers "hello world".
+This repo contains simple node.js app that serves "hello world".
 
-This repo also contains the GitHub Actions Workflow for building the Node.js application.
+This repo also contains the GitHub Actions Workflow for building the Node.js application Docker Image.
 
+## Node / NPM Commands
 
-## Install depenedencies
-npm install 
+### Run node application
+`node app.js`
 
-## Run tests
-npm test
+### Initializes/Creates a node module but needs package.json
+`npm init` 
 
-## Run It
+### Install depenedencies mentioned in package.json
+`npm install` 
 
+### Run Mocha tests but ensure that package.json contains the tests execution step
+`npm test`
+
+### Run node application via NPM
 `npm start`
