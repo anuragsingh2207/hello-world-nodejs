@@ -22,4 +22,4 @@ jobs:
         run: npm install
 
       - name: Build Docker Images
-        run: docker build -t hello-node:latest .
+        run: docker build -t hello-world-node:latest .
