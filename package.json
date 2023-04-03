@@ -4,7 +4,7 @@
   "description": "Simple node.js app that servers \"hello world\"",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
