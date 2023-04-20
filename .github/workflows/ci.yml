@@ -2,8 +2,11 @@ name: Node.js CI
 on:
   push:
     branches: [ main ]
-
   workflow_dispatch:
+
+env:  
+  USERNAME: ${{secrets.DOCKER_USERNAME}}
+  PASSWORD: ${{secrets.DOCKER_PASSWORD}}
 jobs:
   build:
     name: Build Node.js 
@@ -23,3 +26,6 @@ jobs:
 
       - name: Build Docker Images
         run: docker build -t hello-world-node:latest .
+
+      - name: Docker Login
+        run: docker login -u="${{env.USERNAME}}" -p="${{env.PASSWORD}}"
