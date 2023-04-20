@@ -9,7 +9,7 @@ env:
   PASSWORD: ${{secrets.DOCKER_PASSWORD}}
 jobs:
   build:
-    name: Build Node.js 
+    name: Build Node.js Application
     runs-on: ubuntu-latest
 
     steps:
@@ -24,8 +24,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Docker Images
-        run: docker build -t hello-world-node:latest .
+      - name: Build Docker Image
+        run: docker build -t anuragsingh2207/hello-world-node:latest .
 
       - name: Docker Login
         run: docker login -u="${{env.USERNAME}}" -p="${{env.PASSWORD}}"
+
+      - name: Push Docker Image
+        run: docker push -t anuragsingh2207/hello-world-node:latest .
